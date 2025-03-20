@@ -7,12 +7,8 @@ from keras.layers import Input, Dense, Dropout
 import matplotlib.pyplot as plt
 
 # Cargar los datos
-data = pd.read_csv('data/your_data_file.csv')  # Cambia el nombre del archivo según sea necesario
+data = pd.read_csv('data/datos_retail.csv') 
 
-# Suponiendo que tienes columnas 'encoded_category', 'quantity', y 'total_amount'
-# Aquí debes agregar tu lógica para procesar los datos y crear X e y
-# Por ejemplo:
-# Asegúrate de que estas columnas existan en tu archivo CSV
 X = data[['encoded_category', 'quantity']].values  # Características de entrada
 y = data['total_amount'].values  # Variable objetivo
 
